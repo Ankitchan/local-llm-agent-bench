@@ -1,0 +1,7 @@
+set,task,sample,result,detail,tokens,finish,secs
+ornith,A,1,PASS,6/6,76,stop,16
+ornith,B,1,FAIL,script error: KeyError: 'Category',742,stop,84
+ornith,C,1,PASS,6/6,470,stop,144
+qwen,A,1,PASS,6/6,116,stop,16
+qwen,B,1,PASS,6/6,1069,stop,85
+qwen,C,1,PASS,6/6,495,stop,98

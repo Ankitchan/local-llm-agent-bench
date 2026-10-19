@@ -1,0 +1,8 @@
+[Unit]
+Description=Forward :8080 to the llama.cpp server; exits when idle
+Requires=llama-serve.service
+After=llama-serve.service
+
+[Service]
+# Path of systemd-socket-proxyd differs by distro (/usr/lib/systemd/ on Arch/Fedora, /lib/systemd/ on Debian/Ubuntu).
+ExecStart=/usr/lib/systemd/systemd-socket-proxyd --exit-idle-time=10min 127.0.0.1:8081

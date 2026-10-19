@@ -1,0 +1,19 @@
+set,task,sample,result,detail,tokens,finish,secs
+ornith,A,1,PASS,6/6,1249,stop,114
+ornith,A,2,PASS,6/6,1944,stop,308
+ornith,A,3,PASS,6/6,2117,stop,316
+ornith,B,1,FAIL,hit token cap,6000,length,797
+ornith,B,2,FAIL,hit token cap,6000,length,775
+ornith,B,3,FAIL,hit token cap,6000,length,16640
+ornith,C,1,PASS,6/6,1769,stop,307
+ornith,C,2,PASS,6/6,1588,stop,240
+ornith,C,3,PASS,6/6,665,stop,59
+qwen,A,1,FAIL,hit token cap,6000,length,714
+qwen,A,2,FAIL,hit token cap,6000,length,1176
+qwen,A,3,FAIL,hit token cap,6000,length,898
+qwen,B,1,FAIL,hit token cap,6000,length,1008
+qwen,B,2,FAIL,hit token cap,6000,length,1102
+qwen,B,3,FAIL,hit token cap,6000,length,883
+qwen,C,1,PASS,6/6,4064,stop,812
+qwen,C,2,PASS,6/6,4067,stop,852
+qwen,C,3,PASS,6/6,4120,stop,540

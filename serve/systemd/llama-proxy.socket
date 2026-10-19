@@ -1,0 +1,8 @@
+[Unit]
+Description=On-demand entry point for the local LLM (127.0.0.1:8080)
+
+[Socket]
+ListenStream=127.0.0.1:8080
+
+[Install]
+WantedBy=sockets.target

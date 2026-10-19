@@ -1,0 +1,6 @@
+Write a complete Python script using python-docx that creates `memo.docx` (in the current directory) - a one-page budget memo:
+- A title "Q1 Budget Review" (Title style)
+- A heading "Summary" followed by a short paragraph (2-3 sentences) stating that total actual spending of 6,900 was 300 under the total budget of 7,200
+- A heading "Budget vs Actual" followed by a table with a header row (Category, Budget, Actual) and rows: Rent 4200 / 4200, Groceries 1500 / 1380, Dining 600 / 720, Transport 900 / 600. Header row bold.
+- A heading "Recommendations" followed by exactly three bullet points (List Bullet style) about reducing dining costs.
+Reply with ONLY the script in one ```python block.

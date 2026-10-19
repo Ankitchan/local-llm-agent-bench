@@ -1,0 +1,12 @@
+The following Python function should merge overlapping OR touching intervals (e.g. [1,3] and [3,5] merge into [1,5]) and must work on unsorted input without mutating its argument. It has bugs. Fix it. Reply with ONLY the complete corrected file in one ```python block.
+
+```python
+def merge_intervals(intervals):
+    result = []
+    for start, end in intervals:
+        if result and start < result[-1][1]:
+            result[-1][1] = max(result[-1][1], end)
+        else:
+            result.append([start, end])
+    return result
+```

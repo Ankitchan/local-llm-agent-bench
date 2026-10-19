@@ -1,0 +1,11 @@
+[Unit]
+Description=llama.cpp server (backend on 127.0.0.1:8081)
+
+[Service]
+Type=exec
+ExecStart=@SERVE_DIR@/serve.sh
+# Report "started" only once the model is loaded and answering. Edit the port if you changed PORT in model.env.
+ExecStartPost=/bin/bash -c 'for i in $(seq 1 200); do curl -sf http://127.0.0.1:8081/health >/dev/null && exit 0; sleep 1; done; exit 1'
+TimeoutStartSec=240
+Restart=on-failure
+# Note: when the proxy exits after idling, THIS service keeps running. RAM is freed by --sleep-idle-seconds in serve.sh.

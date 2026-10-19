@@ -1,0 +1,6 @@
+I have a CSV file `transactions.csv` with columns: date (YYYY-MM-DD), description, category, amount. Negative amounts are expenses, positive amounts are income (category "Income").
+
+Write a complete Python script (pandas + openpyxl) that reads `transactions.csv` from the current directory and writes `summary.xlsx` with two sheets:
+1. "By Category": expenses only, one row per category with columns Category, Total Spent (positive number), Transactions (count), % of Total Spent; sorted by Total Spent descending; final row "TOTAL" whose Total Spent cell is an Excel SUM formula.
+2. "Monthly": rows = months (YYYY-MM), columns = expense categories, values = positive total spent, plus a Total column.
+Format money with 2 decimals and bold the header rows. Reply with ONLY the script in one ```python block.

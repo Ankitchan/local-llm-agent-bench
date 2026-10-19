@@ -1,0 +1,8 @@
+.run/
+config.env
+serve/model.env
+results/local/
+__pycache__/
+*.pyc
+*.gguf
+models/
